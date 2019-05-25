@@ -1,18 +1,27 @@
+require 'pry'
+
 def unsafe?(speed)
-  if speed < 40 
+
+   if speed < 40 
     true
-  elsif speed > 60
+   elsif speed > 60
     true
-  else
+   else 
     false
   end
 end
 
-
 def not_safe?(speed)
-	speed < 40 || speed > 60 ? true : false
-	# using comparison operators || (double pipeline) to signify OR and then after writing that condition added the ternary operator ? :
+  speed < 40 || speed > 60 ? true : false
 end
+
+#speed < 40 || speed > 60 is my condition 
+  #I used an or (||) operator
+#? is the if
+#true is the action if true
+#false is the action if false
+
+
 	
 
 
